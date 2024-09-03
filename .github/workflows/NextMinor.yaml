@@ -108,7 +108,7 @@ jobs:
 
       - name: Download thisbuild artifacts
         if: env.workflowDepth > 1
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           path: '${{ github.workspace }}\.dependencies'
 
